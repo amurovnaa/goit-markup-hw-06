@@ -331,7 +331,7 @@ button {
 
 .portfolio {
   background-color: #ffffff;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .portfolio-title {
   margin-bottom: 72px;
@@ -339,13 +339,12 @@ button {
 .portfolio-list {
   display: flex;
   align-items: center;
-  row-gap: 48px;
-  column-gap: 24px;
+  gap: 48px;
   flex-wrap: wrap;
 }
 .portfolio-item {
-  max-width: 360px;
-  max-height: 420px;
+  max-width: 288px;
+  max-height: 400px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover,
@@ -355,7 +354,9 @@ button {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
 }
-
+.portfolio-name {
+  margin-bottom: 8px;
+}
 /*===================add card-overlay======================*/
 .portfolio-photo-overlay {
   max-width: 100%;
@@ -387,9 +388,6 @@ button {
   border: 1px solid #e7e9fc;
   border-top: none;
   max-height: 120px;
-}
-.portfolio-name {
-  margin-bottom: 8px;
 }
 
 /*===================FOOTER======================*/
@@ -744,6 +742,13 @@ button {
   .team-list {
     gap: 64px 24px;
   }
+  .portfolio-list {
+    gap: 72px 24px;
+  }
+  .portfolio-item {
+    max-width: 356px;
+    max-height: 420px;
+  }
 }
 
 /* =======================DESKTOP==================== */
@@ -809,5 +814,11 @@ button {
   }
   .team-list {
     gap: 24px;
+  }
+  .portfolio {
+    padding: 120px 0;
+  }
+  .portfolio-list {
+    gap: 48px 24px;
   }
 }
