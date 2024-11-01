@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-flex">
             <nav class="nav">
                 <a href="./index.html" class="logo">Web<span class="logo-design">Studio</span></a>
@@ -32,8 +32,67 @@
                     <li><a href="tel:+110001111111" class="contacts-links">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu" data-menu>
+            <div class="container mob-menu-container">
+                <button class="mob-menu-close-btn" data-menu-close>
+                    <svg class="icon icon-close-mob-menu" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+                <nav class="mob-menu-nav">
+                    <ul class="mob-menu-nav-list">
+                        <li><a href="./index.html" class="mob-nav-links current">Studio</a></li>
+                        <li><a href="" class="mob-nav-links">Portfolio</a></li>
+                        <li><a href="" class="mob-nav-links">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="mob-menu-contacts">
+                    <ul class="mob-menu-contacts-list">
+                        <li><a href="mailto:info@devstudio.com" class="mob-contacts-links">info@devstudio.com</a></li>
+                        <li><a href="tel:+110001111111" class="mob-contacts-links">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <div class="social mob-menu-social">
+                    <ul class="mob-social-link-list">
+                        <li class="mob-social-link">
+                            <a href="#" class="mob-link">
+                                <svg class="mob-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-social-link">
+                            <a href="#" class="mob-link">
+                                <svg class="mob-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-social-link">
+                            <a href="#" class="mob-link">
+                                <svg class="mob-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob-social-link">
+                            <a href="#" class="mob-link">
+                                <svg class="mob-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
         <section class="order">
@@ -575,8 +634,8 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
-        <div class="modal">
+    <div class="backdrop is-open">
+        <div class="modal container">
             <button type="button" class="modal-open-btn">
                 <svg class="icon icon-close-modal" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-modal"></use>
@@ -635,6 +694,8 @@
 
         </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
