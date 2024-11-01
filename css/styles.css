@@ -41,8 +41,8 @@ button {
 /*==================CONTAINER=====================*/
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -141,26 +141,35 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
-  max-width: 1440px;
+    url(../images/people-office-mob.jpg);
+  max-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  padding: 188px 0;
+  padding: 72px 0;
 }
-
+@media screen and (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .order {
+    background-image: linear-gradient(
+        rgba(30, 24, 35, 0.4),
+        rgba(30, 24, 35, 0.4)
+      ),
+      url(../images/people-office-mob-2x.jpg);
+  }
+}
 .order-title {
   max-width: 496px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 .order-button {
   border-radius: 4px;
@@ -201,32 +210,63 @@ button {
   overflow: hidden;
 }
 .about {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .about-list {
   list-style-type: none;
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .about-item {
-  flex-basis: calc((100% - 3 * 24px));
+  width: 100%;
 }
 .about-icon {
-  max-width: 100%;
-  height: 112px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-  margin-bottom: 8px;
-}
-.about-name {
-  margin-bottom: 8px;
+  display: none;
 }
 
-.about-name,
+.about-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.about-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/*===================TEAM-SECTION======================*/
+
+.team {
+  background-color: #f4f4fd;
+  padding: 96px 0;
+}
+.team-title {
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+.team-item {
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-card-content {
+  padding: 32px 0;
+  text-align: center;
+}
 .team-name,
 .portfolio-name {
   font-weight: 500;
@@ -235,7 +275,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.about-text,
+
 .team-text,
 .portfolio-text {
   font-size: 16px;
@@ -252,31 +292,6 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-}
-
-/*===================TEAM-SECTION======================*/
-
-.team {
-  background-color: #f4f4fd;
-  padding: 120px 0;
-}
-.team-title {
-  margin-bottom: 72px;
-}
-.team-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.team-item {
-  background-color: #ffffff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-.team-card-content {
-  padding: 32px 0;
-  text-align: center;
 }
 .team-name,
 .team-text {
@@ -687,4 +702,112 @@ button {
 .modal-btn:focus {
   background-color: #404bbf;
   cursor: pointer;
+}
+
+/* =====================TABLET========================== */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .order {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+    max-width: 768px;
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .order {
+      background-image: linear-gradient(
+          rgba(30, 24, 35, 0.4),
+          rgba(30, 24, 35, 0.4)
+        ),
+        url(../images/people-office-tablet-2x.jpg);
+    }
+  }
+  .order-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+  .about-list {
+    gap: 72px 24px;
+  }
+  .about-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .team-list {
+    gap: 64px 24px;
+  }
+}
+
+/* =======================DESKTOP==================== */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  .order {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    max-width: 1440px;
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .order {
+      background-image: linear-gradient(
+          rgba(30, 24, 35, 0.4),
+          rgba(30, 24, 35, 0.4)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+  .order-title {
+    margin-bottom: 48px;
+  }
+  .about {
+    padding: 120px 0;
+  }
+  .about-icon {
+    max-width: 100%;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+  .about-list {
+    gap: 24px;
+  }
+  .about-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .about-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .about-text {
+    font-weight: 400;
+  }
+  .team {
+    padding: 120px 0;
+  }
+  .team-list {
+    gap: 24px;
+  }
 }
