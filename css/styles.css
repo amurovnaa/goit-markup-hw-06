@@ -91,6 +91,7 @@ button {
   display: block;
   fill: #2f2f37;
 }
+
 /*===================MOBILE-MENU======================*/
 
 .mob-menu {
@@ -203,6 +204,7 @@ button {
 .mob-link:focus {
   background-color: #31d0aa;
 }
+
 /*===================ORDER-SECTION======================*/
 
 .order {
@@ -427,7 +429,9 @@ button {
 .portfolio-name {
   margin-bottom: 8px;
 }
+
 /*===================add card-overlay======================*/
+
 .portfolio-photo-overlay {
   max-width: 100%;
   max-height: 100%;
@@ -785,6 +789,7 @@ button {
 }
 
 /* =====================TABLET========================== */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -935,6 +940,7 @@ button {
 }
 
 /* =======================DESKTOP==================== */
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
