@@ -226,8 +226,9 @@ button {
   (-webkit-min-device-pixel-ratio: 2) {
   .order {
     background-image: linear-gradient(
-        rgba(30, 24, 35, 0.4),
-        rgba(30, 24, 35, 0.4)
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-mob-2x.jpg);
   }
@@ -877,8 +878,9 @@ button {
     (-webkit-min-device-pixel-ratio: 2) {
     .order {
       background-image: linear-gradient(
-          rgba(30, 24, 35, 0.4),
-          rgba(30, 24, 35, 0.4)
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
         ),
         url(../images/people-office-tablet-2x.jpg);
     }
@@ -976,8 +978,9 @@ button {
     (-webkit-min-device-pixel-ratio: 2) {
     .order {
       background-image: linear-gradient(
-          rgba(30, 24, 35, 0.4),
-          rgba(30, 24, 35, 0.4)
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
         ),
         url(../images/people-office-2x.jpg);
     }
